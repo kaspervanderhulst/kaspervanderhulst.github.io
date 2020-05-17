@@ -1,6 +1,9 @@
 /*all pages*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,900');
+
 html{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+ 
 }
 
 
@@ -11,6 +14,16 @@ header ul{
     margin: 0;
     padding: 0;
     overflow: hidden; 
+}
+
+ul li a{
+   
+    text-decoration: none;
+    color: blue;
+}
+
+ul ul li{
+    list-style-type: decimal;
 }
 #nav li{
     float: left;
@@ -53,3 +66,35 @@ header ul{
 
 
 /*Educatie*/
+
+
+
+.about_title
+{
+	font-size: 30px;
+	font-weight: 700;
+	color: #100f3a;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.about_text
+{
+	margin-top: 31px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #0020C2;
+    color: white;
+  }

@@ -581,8 +581,8 @@ section
 }
 .loader
 {
-	width: 150px;
-	height: 150px;
+	width: 135px;
+	height: 135px;
 	margin: 0 auto;
 	background: transparent;
 }
@@ -618,6 +618,29 @@ section
 	margin-top: 12px;
 	margin-bottom: 30px;
 }
+
+
+
+
+
+.loader_container
+{
+	width: 25%;
+	height: 265px;
+	float: left;
+	padding-bottom: 70px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+.loader2
+{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	background: transparent;
+}
+
 
 /*********************************
 5. Menu

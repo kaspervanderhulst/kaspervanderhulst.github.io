@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Projecten</title>
     <link rel="stylesheet" type="text/css" href="Template2/vcard/styles/bootstrap-4.1.2/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="Template2/vcard/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="Template2/vcard/styles/portfolio.css">
     <link rel="stylesheet" type="text/css" href="Template2/vcard/styles/portfolio_responsive.css">
+    <link rel="stylesheet" href="css/style.css">
 
    
 </head>
@@ -29,17 +30,16 @@
 
 <div class="main_content">
     <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-        <div class="main_subtitle">What I am good at</div>
-        <div class="main_title">My Portfolio</div>
+        <div class="main_title">Mijn Projecten</div>
     </div>
 
     <!-- Sorting -->
     <div class="portfolio_categories button-group filters-button-group">
         <ul>
-            <li class="portfolio_category active is-checked" data-filter="*">All</li>
-            <li class="portfolio_category" data-filter=".p_design">Design</li>
-            <li class="portfolio_category" data-filter=".p_photography">Photography</li>
-            <li class="portfolio_category" data-filter=".p_brand">Brand Identity</li>
+            <li class="portfolio_category active is-checked" data-filter="*">Alle</li>
+            <li class="portfolio_category" data-filter=".p_java">Java</li>
+            <li class="portfolio_category" data-filter=".p_web">Web</li>
+            <li class="portfolio_category" data-filter=".p_other">Andere</li>
         </ul>
     </div>
 
@@ -47,56 +47,62 @@
         <div class="portfolio_grid grid clearfix">
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_design">
-                <img src="Template2/vcard/images/portfolio_1.jpg" alt="">
+            <div class="grid-item portfolio_item p_web">
+                <img src="img/web4.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Design</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">User app Webontwikkeling 4</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een chat applicatie om met verschillende gebruikers te chatten en vrienden toe te voegen. Gebouwd met Java Web</div>
+                    <div class="portfolio_item_link"><a href="https://github.com/kaspervanderhulst/Web4">See More</a></div>
                 </div>
             </div>
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_photography">
-                <img src="Template2/vcard/images/portfolio_2.jpg" alt="">
+            <div class="grid-item portfolio_item p_java">
+                <img src="img/OOO.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Photography</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">Project Kassa OOO</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een kassa applicatie gebouwd met Java</div>
+                    <div class="portfolio_item_link"><a href="https://github.com/akselele/Andries_Hamelryck_Vanderhulst_Kassa_OOO2019">See More</a></div>
                 </div>
             </div>
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_brand">
-                <img src="images/portfolio_3.jpg" alt="">
+            <div class="grid-item portfolio_item p_java" class="grid-item portfolio_item p_web">
+                <img src="img/projectweek3.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Brand Identity</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">Project ticket Queue</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een Ticketing systeem voor de opendeurdag van de UCLL. Gebouwd met Java Web</div>
+                    <div class="portfolio_item_link"><a href="https://github.com/Projectweek1920/pw2-komodo">See More</a></div>
                 </div>
             </div>
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_design">
-                <img src="images/portfolio_4.jpg" alt="">
+            <div class="grid-item portfolio_item p_other">
+                <img src="img/Picross.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Design</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">Picross Project</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een picross spel volgens het MVVM-patroon. Gebouwd met C# en WPF</div>
+                    <!--<div class="portfolio_item_link"><a href="#">See More</a></div>-->
                 </div>
             </div>
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_photography">
-                <img src="images/portfolio_5.jpg" alt="">
+            <div class="grid-item portfolio_item p_other">
+                <img src="img/PhoenixProject.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Photography</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">Website met Phoenix framework</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een Web applicatie waarin gebruikers honden en katten kunnen bijhouden. Gebouwd met het Phoenix Framework en Elixir</div>
+                   <!-- <div class="portfolio_item_link"><a href="#">See More</a></div>-->
                 </div>
             </div>
 
             <!-- Portfolio Item -->
-            <div class="grid-item portfolio_item p_brand">
-                <img src="images/portfolio_6.jpg" alt="">
+            <div class="grid-item portfolio_item p_web">
+                <img src="img/Web1.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                    <div class="portfolio_item_title">Brand Identity</div>
-                    <div class="portfolio_item_link"><a href="#">See More</a></div>
+                    <div class="portfolio_item_title">Statische Website</div>
+                    <div style="padding-left: 15px;" style="padding-right: 10px;" class="portfolio_item_link">Een Statische website gebouwd met Html en Css</div>
+                    
                 </div>
             </div>
         </div>

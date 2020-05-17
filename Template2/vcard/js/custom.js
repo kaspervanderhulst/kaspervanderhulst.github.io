@@ -54,6 +54,7 @@ $(document).ready(function()
 
 	initMenu();
 	initLoaders();
+	initLoaders2();
 
 	/* 
 
@@ -151,6 +152,71 @@ $(document).ready(function()
 						},
 						from:{ color: '#357EC7', width: 8 },
 						to: { color: '#59E817', width: 8 },
+						// Set default step function for all animate calls
+						step: function(state, circle)
+						{
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+
+							var value = Math.round(circle.value() * 100);
+							if (value === 0)
+							{
+								circle.setText(' ');
+							}
+							else
+							{
+								circle.setText(' ');
+							}
+						}
+					});
+					bar.text.style.fontFamily = '"Montserrat", sans-serif';
+					bar.text.style.fontSize = '44px';
+					bar.text.style.fontWeight = '700';
+					bar.text.style.color = "#100f3a";
+
+
+					bar.animate(endValue);  // Number from 0.0 to 1.0
+		    	})
+			    .addTo(ctrl);
+			});
+		}
+	}
+
+
+	function initLoaders2()
+	{
+		if($('.loader2').length)
+		{
+			var loaders = $('.loader2');
+
+			loaders.each(function()
+			{
+				var loader = this;
+				var endValue = $(loader).data('perc');
+
+				var loaderScene = new ScrollMagic.Scene({
+		    		triggerElement: this,
+		    		triggerHook: 'onEnter',
+		    		reverse:false
+		    	})
+		    	.on('start', function()
+		    	{
+		    		var bar = new ProgressBar.Circle(loader,
+					{
+						color: '#8583e1',
+						// This has to be the same size as the maximum width to
+						// prevent clipping
+						strokeWidth: 1,
+						trailWidth: 8,
+						trailColor: '#e5e6e8',
+						easing: 'easeInOut',
+						duration: 1400,
+						text:
+						{
+							autoStyleContainer: false
+						},
+						from:{ color: '#ffb6c1', width: 8 },
+						to: { color: '#c71585', width: 8 },
 						// Set default step function for all animate calls
 						step: function(state, circle)
 						{
